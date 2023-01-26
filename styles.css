@@ -57,6 +57,10 @@ button:hover {
     background-color: #4caf4f;
 }
 
+p {
+    margin: 0px;
+    padding: 0px;
+}
 
 ul {
     display: flex;
@@ -67,15 +71,23 @@ ul {
 
 li { 
     list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: #4c9eaf;
-    border-style: solid;
+    margin: 5px;
+    padding: 0px;
+    border: solid #4c9eaf;
     width: 500px;
     height: 50px;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-radius: 5px;
+}
+
+li:hover {
+    background-color: rgba(250, 49, 49, 0.5);
+    border: solid rgba(250, 49, 49, 0.5);
+    color: black;
 }
 
 button:disabled {
